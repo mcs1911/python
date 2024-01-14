@@ -1,3 +1,7 @@
+### VARIÁVEIS ###
+
+# A forma aqui não é Camel senão snakecase todo minuscúlas separadas por _
+
 my_string_variable = 'Variável de String'
 print(my_string_variable)
 

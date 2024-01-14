@@ -1,3 +1,5 @@
+### HELLO PYTHON ###
+
 # Assim comentamos um código em python 
 # Para abrir um Terminal python se utilizou o comando Python: Run Python File in Terminal"
 # '''Para fazer um comentário em várias linhas''' ou """ Assim também funciona"""

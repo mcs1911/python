@@ -12,3 +12,5 @@ if sexo == 'sim':
     else: 
         tempo = (idade - 18)
         print('Você tem {} anos e já passou {} anos da idade de se alistar'.format(idade, tempo))
+else:
+    print('O serviço militar não é obrigatório para mulheres no Brasil')

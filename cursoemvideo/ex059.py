@@ -29,4 +29,5 @@ while op == 4:
 if op == 5:
     print('Você selecionou \033[7msair do programa\033[m')
     print('--FIM--')
-print('O valor digitado é inválido. Tente novamente')
+if 1 > op or op > 5:
+    print('O valor digitado é inválido. Tente novamente')

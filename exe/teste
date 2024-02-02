@@ -1,3 +1,7 @@
-listaA = [2, 3, 4]
-listaB = [10, 11, 12]
-print(list(map(pow, listaA, listaB)))
+house = 1000000.00
+good_credit = False
+
+if good_credit:
+    print(f'Entrada de {house * 0.1 :.2f}')
+else:
+    print(f'Entrada de {house * 0.2 :.2f}')

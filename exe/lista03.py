@@ -12,7 +12,7 @@ quadrado = [item**3 for item in list1]
 print(quadrado)
 '''
 
-# Exercício 2 - Reescreva o código abaixo, usando a função map(). O resultado final deve ser o mesmo!
+print('Exercício 2 - Reescreva o código abaixo, usando a função map(). O resultado final deve ser o mesmo!')
 
 palavras = 'A Data Science Academy oferce os melhores cursos de análise de dados do Brasil.'.split()
 resultado = [[w.upper(), w.lower(), len(w)] for w in palavras]
@@ -21,15 +21,28 @@ for i in resultado:
 
 palavras = 'A Data Science Academy oferce os melhores cursos de análise de dados do Brasil.'.split()
 
-resultado = list(map([w.upper(), w.lower(), len(w) for w in palavras]))
+resultado = list(map(lambda w : [w.upper(), w.lower(), len(w)], palavras))
 for i in resultado:
-    print (i)
-
+    print(i)
+    
+#Esse for final é para criar listas separadas para cada elemento criado na função split
   
-# Exercício 3 - Calcule a matriz transposta da matriz abaixo.\n",
-# Caso não saiba o que é matriz transposta, visite este link: https://pt.wikipedia.org/wiki/Matriz_transposta\n",
-# Matriz transposta é um conceito fundamental na construção de redes neurais artificiais, base de sistemas de IA.\n",
-#matrix = [[1, 2],[3,4],[5,6],[7,8]]\n"
+# Exercício 3 - Calcule a matriz transposta da matriz abaixo.
+# Caso não saiba o que é matriz transposta, visite este link: https://pt.wikipedia.org/wiki/Matriz_transposta
+# Matriz transposta é um conceito fundamental na construção de redes neurais artificiais, base de sistemas de IA.
+
+matrix = [[1, 2],[3,4],[5,6],[7,8]]
+
+transposta = list(zip(*matrix))
+print(transposta)
+
+'''
+SOLUÇÃO DO PROFESSOR:
+
+matrix = [[1, 2],[3,4],[5,6],[7,8]]
+transpose = [[row[i] for row in matrix] for i in range(2)]
+print(transpose)
+'''
  
 print('Exercício 4 - Crie duas funções, uma para elevar um número ao quadrado e outra para elevar ao cubo. Aplique as duas funções aos elementos da lista abaixo. Obs: as duas funções devem ser aplicadas simultaneamente')
 
@@ -105,22 +118,28 @@ print(f'Lista de números propostos: \033[01;33m{lista}\033[m')
 resultado = list(filter(verificar_negativo, lista))
 print(f'O resultado da lista com apenas os números negativos: \033[01;35m{resultado}\033[m')
 
-'''
 range(-5, 5)
 list(filter((lambda x: x < 0), range(-5,5)))
-'''
-# Exercício 7 - Usando a função filter(), encontre os valores que são comuns às duas listas abaixo.
 
-def igualdade(x,y):
-    if x == y:
-        return True
-    else:
-        return False
-
+print('Exercício 7 - Usando a função filter(), encontre os valores que são comuns às duas listas abaixo.') 
 a = [1,2,3,5,7,9]
 b = [2,3,5,6,7,8]
 
-print(igualdade(a,b))
+# Definindo uma função
+
+def igualdade(elemento):
+    return elemento in a and elemento in b
+
+valores_comuns = list(filter(igualdade, b))
+
+print(valores_comuns)
+
+# RESOLUÇÃO DO PROFESSOR print(list(filter(lambda x: x in a, b)))
+
+# Usando Lambda
+
+comuns = list(filter(lambda elemento: elemento in a and elemento in b, b))
+print(comuns)
 
 #resultado = list(filter(igualdade(a,b), a b))
 #print(resultado)
@@ -130,9 +149,50 @@ print(igualdade(a,b))
 dict1 = {'a':1,'b':2}
 dict2 = {'c':4,'d':5}
 
+intercalando = zip(dict1.keys(), dict2.values())
+print(list(intercalando))
 
-# Exercício 9 - Considere a lista abaixo e retorne apenas os elementos cujo índice for maior que 5.\n",
+'''
+SOLUÇÃO DO PROFESSOR:
+
+def trocaValores(d1, d2):
+    dicTemp = {}
+    
+    for d1key, d2val in zip(d1,d2.values()):
+        dicTemp[d1key] = d2val
+    
+    return dicTemp
+
+dict3 = trocaValores(dict1, dict2)
+print(dict3)
+
+'''
+print('Exercício 9 - Considere a lista abaixo e retorne apenas os elementos cujo índice for maior que 5')
+
+#lista = ["banana", "maçã", "laranja", "uva"]
+#for indice, valor in enumerate(lista):
+#print(f"Índice: {indice}, Valor: {valor}")
+
 lista = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+for indice, valor in enumerate(lista):
+    if indice > 5:
+        print(f'Índice: {indice}, Valor: {valor}') 
+   
+# Com a função Lambda:
+     
+print(list(filter(lambda indice_valor: indice_valor[0] > 5, enumerate(lista))))
+
+'''
+SOLUÇÃO DO PROFESSOR:
+
+lista = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+for indice, valor in enumerate(lista):
+    if indice <= 5:
+        continue
+    else:
+        print (valor)
+'''
 
 print('Exercício 10 - Crie um regex em Python para extrair a palavra que aparece depois das palavras Data e Science" na frase: A Data Science Academy oferece os melhores cursos de análise de dados do Brasil.')
     
@@ -141,6 +201,7 @@ import re
 frase = 'A Data Science Academy oferece os melhores cursos de análise de dados do Brasil.'
 
 # Padrão regex para extrair a palavra após 'Data Science'
+
 padrao = re.compile(r'\bData Science\b\s+(\w+)')
 
 correspondencia = padrao.search(frase)

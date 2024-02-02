@@ -1,7 +1,4 @@
-house = 1000000.00
-good_credit = False
+matrix = [[1, 2],[3,4],[5,6],[7,8]]
 
-if good_credit:
-    print(f'Entrada de {house * 0.1 :.2f}')
-else:
-    print(f'Entrada de {house * 0.2 :.2f}')
+transposta = list(zip(*matrix))
+print(transposta)

@@ -9,4 +9,4 @@ while cont <= 10:
     print(f'{termo} -> ', end='')
     termo += raz
     cont += 1
-print('---FIM---')
+print('\n---FIM---')

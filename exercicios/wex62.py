@@ -11,13 +11,14 @@ pri = int(input('Digite o primeiro termo: '))
 raz = int(input('Digite a razão da PA: '))
 cont = 1
 num = pri
-n = 10
-
-while cont < n:
-    print(f'{num} -> ', end=' ')
-    cont +=1
-    num += raz
-    
-n = int(input('\nQuantos números mais você gostaria de ver? '))
+mais = 10
+total = 0
+while mais != 0:
+    total += mais
+    while cont <= total:
+        print(f'{num} -> ', end=' ')
+        cont +=1
+        num += raz
+    mais = int(input('\nQuantos números mais você gostaria de ver? '))
         
 print('\n---FIM---')

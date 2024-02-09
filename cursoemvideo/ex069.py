@@ -8,16 +8,17 @@ while True:
     print('-' * 30)
     print('----CADASTRO----')
     print('-' * 30)
-    sexo = input('Sexo [M/F]: ').strip().upper()[0]
-    if sexo in 'MmFf':
-        idade = int(input('Idade: '))
-        if idade < 18:
-            menor += 1
-        if sexo in 'Mm':
-            homens += 1
-        if sexo in 'Ff' and idade < 20:
-            mulheres_menores += 1
-        continuar = input('Deseja continuar cadastrando? [S/N]: ').strip().upper()[0]
+    sexo = ' '
+    while sexo not in 'MmFf':
+        sexo = input('Sexo [M/F]: ').strip().upper()[0]  
+    idade = int(input('Idade: '))
+    if idade < 18:
+        menor += 1
+    if sexo in 'Mm':
+        homens += 1
+    if sexo in 'Ff' and idade < 20:
+        mulheres_menores += 1
+    continuar = input('Deseja continuar cadastrando? [S/N]: ').strip().upper()[0]
 
 
 print('-' * 30)

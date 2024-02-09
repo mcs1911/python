@@ -1,6 +1,6 @@
 from random import randint
 
-comp_num = randint(0, 10)
+
 
 print('----JOGO DO PAR OU ÍMPAR----')
 
@@ -11,9 +11,12 @@ while True:
     if perder == 0:
         break
     jog_num = int(input('Número: '))
-    jog_escolha = input('Você quer Par ou Ímpar [P/I]: ').strip().upper()[0]
+    jog_escolha = ' '
+    comp_num = randint(0, 11)
     soma = jog_num + comp_num
     print('-' * 30)
+    while jog_escolha not in 'PpIi':
+        jog_escolha = input('Você quer Par ou Ímpar [P/I]: ').strip().upper()[0]
     if jog_escolha in 'Pp':
         if soma % 2 == 0:
             print(f'Você escolheu {jog_num} e o computador escolheu {comp_num}. A soma = \033[01;32m{soma} é PAR!!!!\033[m VOCÊ GANHOU!')

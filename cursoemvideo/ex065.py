@@ -1,23 +1,24 @@
 print('-=-' * 20)
 print('Desafio desafiador do while!')
 
-n = int(input('Digite um valor: '))
-media = 0
-maior = n
-menor = n
-op = 'S'
-cont = 0 
-while op == 'S':
+soma = cont = media = maior = menor = 0
+op = 'S' 
+while op in 'Ss':
     n = int(input('Digite um valor: '))
-    op = str(input('Você deseja continuar inserindo números?: ')).upper()
-    media = media + n
+    soma += n
     cont += 1
-    if op == 'N':
-        mediaf = media / cont
-        print(f'A média dos {n} os números digitados foi: {mediaf :.1f}')
+    if cont == 1:
+        maior = menor = n
+    else:
         if n > maior:
             maior = n
-        elif n < menor:
-            n = menor
+        if n < menor:
+            menor = n
+    op = str(input('Você deseja continuar inserindo números?[S/N]: ')).upper().strip()[0]
+        
+media = soma / cont
+
+print(f'A média dos {n} os números digitados foi: {media :.2f}')     
 print(f'O menor número digitado foi {menor}')
 print(f'O maior número digitado foi {maior}')
+

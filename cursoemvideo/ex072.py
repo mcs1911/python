@@ -6,3 +6,4 @@ while num not in range(0, 21):
     num_extenso = tupla_extenso[num]
 print(f'Você digitou \033[01;33m{num_extenso}')
     
+# Poderia ser por {tupla_extenso[]}

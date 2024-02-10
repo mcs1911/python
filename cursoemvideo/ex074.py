@@ -14,3 +14,5 @@ maior = sorted(tupla_aleatoria)[-1]
 
 print(f'O Menor número gerado foi {menor}')
 print(f'O Maior número gerado foi {maior}')
+
+# Poderia ter usado max(tupla_aleatoria) e o mesmo com mim

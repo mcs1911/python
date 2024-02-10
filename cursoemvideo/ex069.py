@@ -1,6 +1,6 @@
 homens = menor = 0
 mulheres_menores = 0
-continuar = 'S'
+continuar = ' '
 
 while True:
     if continuar in 'Nn':
@@ -19,6 +19,8 @@ while True:
     if sexo in 'Ff' and idade < 20:
         mulheres_menores += 1
     continuar = input('Deseja continuar cadastrando? [S/N]: ').strip().upper()[0]
+    while continuar not in 'SN':
+        continuar = input('Deseja continuar cadastrando? [S/N]: ').strip().upper()[0]
 
 
 print('-' * 30)

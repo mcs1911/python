@@ -1,7 +1,5 @@
 from random import randint
 
-
-
 print('----JOGO DO PAR OU ÍMPAR----')
 
 ganhar = 0
@@ -12,7 +10,7 @@ while True:
         break
     jog_num = int(input('Número: '))
     jog_escolha = ' '
-    comp_num = randint(0, 11)
+    comp_num = randint(0, 10)
     soma = jog_num + comp_num
     print('-' * 30)
     while jog_escolha not in 'PpIi':

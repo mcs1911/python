@@ -1,6 +1,14 @@
 palavras = ('manga', 'maça', 'laranja', 'uva', 'pera', 'morango')
 #frutas = list(palavras)
 
+for fruta in palavras:
+    vogal = set()
+    for letra in fruta:
+        if letra in 'aeiou':
+            vogal.add(letra)
+    ordem = ", ".join(sorted(vogal))
+    print(f'A palavra {fruta.upper()} possui as vogais {ordem.upper()}')
+    
 '''
 for fruta in frutas:
     vogal = set()
@@ -17,11 +25,3 @@ for fruta in palavras:
             vogal += letra
     print(f'A palavra {fruta.upper()} possui as vogais {", ".join(vogal).upper()}')
 '''
-
-for fruta in palavras:
-    vogal = set()
-    for letra in fruta:
-        if letra in 'aeiou':
-            vogal.add(letra)
-    ordem = ", ".join(sorted(vogal))
-    print(f'A palavra {fruta.upper()} possui as vogais {ordem.upper()}')

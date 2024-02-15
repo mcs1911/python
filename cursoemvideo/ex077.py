@@ -10,6 +10,13 @@ for fruta in palavras:
     print(f'A palavra {fruta.upper()} possui as vogais {ordem.upper()}')
     
 '''
+#PROFESSOR
+for fruta in frutas:
+    print(f'\nNa palavra {fruta.upper()} temos ', end='')
+    for letra in fruta:
+        if letra in 'aeiou':
+            print(letra, end='')
+
 for fruta in frutas:
     vogal = set()
     for letra in fruta:

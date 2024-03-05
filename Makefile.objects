@@ -1,0 +1,108 @@
+-include sapi/cli/php_cli.dep
+sapi/cli/php_cli.lo: /Applications/php-8.3.3/sapi/cli/php_cli.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/cli/ -I/Applications/php-8.3.3/sapi/cli/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/cli/php_cli.c -o sapi/cli/php_cli.lo  -MMD -MF sapi/cli/php_cli.dep -MT sapi/cli/php_cli.lo
+-include sapi/cli/php_http_parser.dep
+sapi/cli/php_http_parser.lo: /Applications/php-8.3.3/sapi/cli/php_http_parser.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/cli/ -I/Applications/php-8.3.3/sapi/cli/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/cli/php_http_parser.c -o sapi/cli/php_http_parser.lo  -MMD -MF sapi/cli/php_http_parser.dep -MT sapi/cli/php_http_parser.lo
+-include sapi/cli/php_cli_server.dep
+sapi/cli/php_cli_server.lo: /Applications/php-8.3.3/sapi/cli/php_cli_server.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/cli/ -I/Applications/php-8.3.3/sapi/cli/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/cli/php_cli_server.c -o sapi/cli/php_cli_server.lo  -MMD -MF sapi/cli/php_cli_server.dep -MT sapi/cli/php_cli_server.lo
+-include sapi/cli/ps_title.dep
+sapi/cli/ps_title.lo: /Applications/php-8.3.3/sapi/cli/ps_title.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/cli/ -I/Applications/php-8.3.3/sapi/cli/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/cli/ps_title.c -o sapi/cli/ps_title.lo  -MMD -MF sapi/cli/ps_title.dep -MT sapi/cli/ps_title.lo
+-include sapi/cli/php_cli_process_title.dep
+sapi/cli/php_cli_process_title.lo: /Applications/php-8.3.3/sapi/cli/php_cli_process_title.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/cli/ -I/Applications/php-8.3.3/sapi/cli/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/cli/php_cli_process_title.c -o sapi/cli/php_cli_process_title.lo  -MMD -MF sapi/cli/php_cli_process_title.dep -MT sapi/cli/php_cli_process_title.lo
+-include sapi/phpdbg/phpdbg.dep
+sapi/phpdbg/phpdbg.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg.c -o sapi/phpdbg/phpdbg.lo  -MMD -MF sapi/phpdbg/phpdbg.dep -MT sapi/phpdbg/phpdbg.lo
+-include sapi/phpdbg/phpdbg_parser.dep
+sapi/phpdbg/phpdbg_parser.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_parser.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_parser.c -o sapi/phpdbg/phpdbg_parser.lo  -MMD -MF sapi/phpdbg/phpdbg_parser.dep -MT sapi/phpdbg/phpdbg_parser.lo
+-include sapi/phpdbg/phpdbg_lexer.dep
+sapi/phpdbg/phpdbg_lexer.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_lexer.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_lexer.c -o sapi/phpdbg/phpdbg_lexer.lo  -MMD -MF sapi/phpdbg/phpdbg_lexer.dep -MT sapi/phpdbg/phpdbg_lexer.lo
+-include sapi/phpdbg/phpdbg_prompt.dep
+sapi/phpdbg/phpdbg_prompt.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_prompt.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_prompt.c -o sapi/phpdbg/phpdbg_prompt.lo  -MMD -MF sapi/phpdbg/phpdbg_prompt.dep -MT sapi/phpdbg/phpdbg_prompt.lo
+-include sapi/phpdbg/phpdbg_help.dep
+sapi/phpdbg/phpdbg_help.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_help.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_help.c -o sapi/phpdbg/phpdbg_help.lo  -MMD -MF sapi/phpdbg/phpdbg_help.dep -MT sapi/phpdbg/phpdbg_help.lo
+-include sapi/phpdbg/phpdbg_break.dep
+sapi/phpdbg/phpdbg_break.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_break.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_break.c -o sapi/phpdbg/phpdbg_break.lo  -MMD -MF sapi/phpdbg/phpdbg_break.dep -MT sapi/phpdbg/phpdbg_break.lo
+-include sapi/phpdbg/phpdbg_print.dep
+sapi/phpdbg/phpdbg_print.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_print.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_print.c -o sapi/phpdbg/phpdbg_print.lo  -MMD -MF sapi/phpdbg/phpdbg_print.dep -MT sapi/phpdbg/phpdbg_print.lo
+-include sapi/phpdbg/phpdbg_bp.dep
+sapi/phpdbg/phpdbg_bp.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_bp.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_bp.c -o sapi/phpdbg/phpdbg_bp.lo  -MMD -MF sapi/phpdbg/phpdbg_bp.dep -MT sapi/phpdbg/phpdbg_bp.lo
+-include sapi/phpdbg/phpdbg_list.dep
+sapi/phpdbg/phpdbg_list.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_list.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_list.c -o sapi/phpdbg/phpdbg_list.lo  -MMD -MF sapi/phpdbg/phpdbg_list.dep -MT sapi/phpdbg/phpdbg_list.lo
+-include sapi/phpdbg/phpdbg_utils.dep
+sapi/phpdbg/phpdbg_utils.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_utils.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_utils.c -o sapi/phpdbg/phpdbg_utils.lo  -MMD -MF sapi/phpdbg/phpdbg_utils.dep -MT sapi/phpdbg/phpdbg_utils.lo
+-include sapi/phpdbg/phpdbg_info.dep
+sapi/phpdbg/phpdbg_info.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_info.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_info.c -o sapi/phpdbg/phpdbg_info.lo  -MMD -MF sapi/phpdbg/phpdbg_info.dep -MT sapi/phpdbg/phpdbg_info.lo
+-include sapi/phpdbg/phpdbg_cmd.dep
+sapi/phpdbg/phpdbg_cmd.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_cmd.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_cmd.c -o sapi/phpdbg/phpdbg_cmd.lo  -MMD -MF sapi/phpdbg/phpdbg_cmd.dep -MT sapi/phpdbg/phpdbg_cmd.lo
+-include sapi/phpdbg/phpdbg_set.dep
+sapi/phpdbg/phpdbg_set.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_set.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_set.c -o sapi/phpdbg/phpdbg_set.lo  -MMD -MF sapi/phpdbg/phpdbg_set.dep -MT sapi/phpdbg/phpdbg_set.lo
+-include sapi/phpdbg/phpdbg_frame.dep
+sapi/phpdbg/phpdbg_frame.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_frame.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_frame.c -o sapi/phpdbg/phpdbg_frame.lo  -MMD -MF sapi/phpdbg/phpdbg_frame.dep -MT sapi/phpdbg/phpdbg_frame.lo
+-include sapi/phpdbg/phpdbg_watch.dep
+sapi/phpdbg/phpdbg_watch.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_watch.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_watch.c -o sapi/phpdbg/phpdbg_watch.lo  -MMD -MF sapi/phpdbg/phpdbg_watch.dep -MT sapi/phpdbg/phpdbg_watch.lo
+-include sapi/phpdbg/phpdbg_btree.dep
+sapi/phpdbg/phpdbg_btree.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_btree.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_btree.c -o sapi/phpdbg/phpdbg_btree.lo  -MMD -MF sapi/phpdbg/phpdbg_btree.dep -MT sapi/phpdbg/phpdbg_btree.lo
+-include sapi/phpdbg/phpdbg_sigsafe.dep
+sapi/phpdbg/phpdbg_sigsafe.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_sigsafe.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_sigsafe.c -o sapi/phpdbg/phpdbg_sigsafe.lo  -MMD -MF sapi/phpdbg/phpdbg_sigsafe.dep -MT sapi/phpdbg/phpdbg_sigsafe.lo
+-include sapi/phpdbg/phpdbg_io.dep
+sapi/phpdbg/phpdbg_io.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_io.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_io.c -o sapi/phpdbg/phpdbg_io.lo  -MMD -MF sapi/phpdbg/phpdbg_io.dep -MT sapi/phpdbg/phpdbg_io.lo
+-include sapi/phpdbg/phpdbg_out.dep
+sapi/phpdbg/phpdbg_out.lo: /Applications/php-8.3.3/sapi/phpdbg/phpdbg_out.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/phpdbg/ -I/Applications/php-8.3.3/sapi/phpdbg/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -D_GNU_SOURCE -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/phpdbg/phpdbg_out.c -o sapi/phpdbg/phpdbg_out.lo  -MMD -MF sapi/phpdbg/phpdbg_out.dep -MT sapi/phpdbg/phpdbg_out.lo
+-include sapi/cgi/cgi_main.dep
+sapi/cgi/cgi_main.lo: /Applications/php-8.3.3/sapi/cgi/cgi_main.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Isapi/cgi/ -I/Applications/php-8.3.3/sapi/cgi/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -c /Applications/php-8.3.3/sapi/cgi/cgi_main.c -o sapi/cgi/cgi_main.lo  -MMD -MF sapi/cgi/cgi_main.dep -MT sapi/cgi/cgi_main.lo
+-include ext/date/php_date.dep
+ext/date/php_date.lo: /Applications/php-8.3.3/ext/date/php_date.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/php_date.c -o ext/date/php_date.lo  -MMD -MF ext/date/php_date.dep -MT ext/date/php_date.lo
+-include ext/date/lib/astro.dep
+ext/date/lib/astro.lo: /Applications/php-8.3.3/ext/date/lib/astro.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/astro.c -o ext/date/lib/astro.lo  -MMD -MF ext/date/lib/astro.dep -MT ext/date/lib/astro.lo
+-include ext/date/lib/dow.dep
+ext/date/lib/dow.lo: /Applications/php-8.3.3/ext/date/lib/dow.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/dow.c -o ext/date/lib/dow.lo  -MMD -MF ext/date/lib/dow.dep -MT ext/date/lib/dow.lo
+-include ext/date/lib/parse_date.dep
+ext/date/lib/parse_date.lo: /Applications/php-8.3.3/ext/date/lib/parse_date.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/parse_date.c -o ext/date/lib/parse_date.lo  -MMD -MF ext/date/lib/parse_date.dep -MT ext/date/lib/parse_date.lo
+-include ext/date/lib/parse_tz.dep
+ext/date/lib/parse_tz.lo: /Applications/php-8.3.3/ext/date/lib/parse_tz.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/parse_tz.c -o ext/date/lib/parse_tz.lo  -MMD -MF ext/date/lib/parse_tz.dep -MT ext/date/lib/parse_tz.lo
+-include ext/date/lib/parse_posix.dep
+ext/date/lib/parse_posix.lo: /Applications/php-8.3.3/ext/date/lib/parse_posix.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/parse_posix.c -o ext/date/lib/parse_posix.lo  -MMD -MF ext/date/lib/parse_posix.dep -MT ext/date/lib/parse_posix.lo
+-include ext/date/lib/timelib.dep
+ext/date/lib/timelib.lo: /Applications/php-8.3.3/ext/date/lib/timelib.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/timelib.c -o ext/date/lib/timelib.lo  -MMD -MF ext/date/lib/timelib.dep -MT ext/date/lib/timelib.lo
+-include ext/date/lib/tm2unixtime.dep
+ext/date/lib/tm2unixtime.lo: /Applications/php-8.3.3/ext/date/lib/tm2unixtime.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/tm2unixtime.c -o ext/date/lib/tm2unixtime.lo  -MMD -MF ext/date/lib/tm2unixtime.dep -MT ext/date/lib/tm2unixtime.lo
+-include ext/date/lib/unixtime2tm.dep
+ext/date/lib/unixtime2tm.lo: /Applications/php-8.3.3/ext/date/lib/unixtime2tm.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/unixtime2tm.c -o ext/date/lib/unixtime2tm.lo  -MMD -MF ext/date/lib/unixtime2tm.dep -MT ext/date/lib/unixtime2tm.lo
+-include ext/date/lib/parse_iso_intervals.dep
+ext/date/lib/parse_iso_intervals.lo: /Applications/php-8.3.3/ext/date/lib/parse_iso_intervals.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/parse_iso_intervals.c -o ext/date/lib/parse_iso_intervals.lo  -MMD -MF ext/date/lib/parse_iso_intervals.dep -MT ext/date/lib/parse_iso_intervals.lo
+-include ext/date/lib/interval.dep
+ext/date/lib/interval.lo: /Applications/php-8.3.3/ext/date/lib/interval.c
+	$(LIBTOOL) --tag=CC --mode=compile $(CC) -Iext/date/ -I/Applications/php-8.3.3/ext/date/ $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) -Wno-implicit-fallthrough -Iext/date/lib -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -DHAVE_TIMELIB_CONFIG_H=1 -c /Applications/php-8.3.3/ext/date/lib/interval.c -o ext/date/lib/interval.lo  -MMD -MF ext/date/lib/interval.dep -MT ext/date/lib/interval.lo

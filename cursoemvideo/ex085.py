@@ -12,4 +12,4 @@ ordem = [sorted(lista[0])] + [sorted(lista[1])]
 
 print(ordem)
 print(f'Lista dos pares: {ordem[0]}')
-print(f'Lista dos ímpares: {ordem[1]}')
+print(f'Lista dos ímpares: {ordem[1]}') 

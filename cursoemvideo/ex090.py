@@ -18,3 +18,6 @@ dic['situação'] = situ
 print(f'Situação é igual a \033[1;32m{dic['situação']}\033[m')
 
 print(dic)
+
+for k, v in dic.items():
+    print(f' - {k} é igual a {v}')
